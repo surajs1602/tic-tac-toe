@@ -1,4 +1,4 @@
-.App{
+.App {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,17 +9,18 @@
   font-size: larger;
 }
 
-.board-row{
+.board-row {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.board-container{
+.board-container {
   margin: 20px;
   width: 400px;
 }
-.winnerPage{
+
+.refreshButton {
   width: 400px;
   display: flex;
   align-items: center;
@@ -27,20 +28,46 @@
   margin-top: 20px;
 }
 
-.winnerPage ul{
+.winnerPage {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.winnerPage ul {
   list-style-type: none;
 }
 
-.winnerPage ul li{
+.winnerPage ul li {
   padding: 10px;
 }
 
-button{ 
+button {
   box-sizing: border-box;
   border-radius: 10px;
   width: 200px;
   height: 40px;
-  background-color:darkgoldenrod;
+  background-color: darkgoldenrod;
   font-family: Poppins;
   font-weight: 500;
+}
+
+@media only screen and (max-width: 390px) {
+  .App {
+    overflow: hidden;
+    font-size: medium;
+    align-items: baseline;
+  }
+
+  .board-container {
+    width: 350px;
+    height: 350px;
+  }
+
+  .winnerPage {
+    justify-content: left;
+    margin-left: 30px;
+  }
 }

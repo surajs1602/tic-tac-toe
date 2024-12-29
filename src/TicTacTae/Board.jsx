@@ -96,7 +96,7 @@ const Board = () => {
             <Square onClick={() => handleClick(7)} value={state[7]} />
             <Square onClick={() => handleClick(8)} value={state[8]} />
           </div>
-          <div className="winnerPage">
+          <div className="refreshButton">
             <button onClick={handleReset}> Refresh Board </button>
           </div>
         </>
