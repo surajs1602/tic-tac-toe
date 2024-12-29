@@ -54,11 +54,12 @@ button {
   font-weight: 500;
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 500px) {
   .App {
     overflow: hidden;
     font-size: medium;
     align-items: baseline;
+    color: black;
   }
 
   .board-container {
